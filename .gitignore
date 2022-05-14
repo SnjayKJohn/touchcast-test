@@ -2,3 +2,5 @@
 /.nuxt
 /node_modules
 /package-lock.json
+/dist
+static/sw.js
