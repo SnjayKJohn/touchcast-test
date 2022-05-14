@@ -1,16 +1,13 @@
 <template>
-  <div>
-    <main-section />
-    <books-slider />
-  </div>
+	<main-section />
 </template>
 
 <script>
-import BooksSlider from '~/components/books-slider.vue'
-import mainSection from '~/components/main-section.vue'
+import BooksSlider from '~/components/books-slider.vue';
+import mainSection from '~/components/main-section.vue';
 export default {
-  components: { mainSection, BooksSlider },
-}
+	components: { mainSection, BooksSlider }
+};
 </script>
 
 <style></style>

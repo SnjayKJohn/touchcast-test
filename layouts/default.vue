@@ -1,47 +1,25 @@
 <template>
-  <v-app dark>
-    <v-app-bar :clipped-left="clipped" fixed app flat class="transparent">
-      <logo />
-      <v-spacer />
-      <search />
-    </v-app-bar>
-    <v-main class="pt-0">
-      <Nuxt />
-    </v-main>
-
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
-  </v-app>
+	<v-app dark>
+		<v-app-bar :clipped-left="clipped" fixed app flat class="transparent">
+			<logo />
+			<v-spacer />
+			<search />
+		</v-app-bar>
+		<v-main class="pt-0">
+			<Nuxt />
+		</v-main>
+	</v-app>
 </template>
 
 <script>
-import logo from '~/components/logo.vue'
-import Search from '~/components/search.vue'
+import logo from '~/components/logo.vue';
+import Search from '~/components/search.vue';
 export default {
-  components: { logo, Search },
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
-        },
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js',
-    }
-  },
-}
+	components: { logo, Search },
+	data() {
+		return {
+			clipped: false
+		};
+	}
+};
 </script>
